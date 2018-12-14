@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\micro\documents\programming\angel\cpp\3- expressions & interactivity\math\math\main.cpp(13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\micro\documents\programming\angel\cpp\3- expressions & interactivity\math\math\main.cpp(14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  math.vcxproj -> C:\Users\micro\Documents\Programming\Angel\cpp\3- Expressions & Interactivity\math\Debug\math.exe
