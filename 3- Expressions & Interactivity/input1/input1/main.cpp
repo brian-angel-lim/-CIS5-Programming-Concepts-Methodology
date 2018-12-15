@@ -1,13 +1,13 @@
 #include<iostream>
 #include<string>
-//Program that allows user to input data into variables via the cin command. 
+//Program that allows user to input data into variables via the cin & cin.get() command. 
 
 int main()
 {
 	std::string name = "Vessel";
 	int age;
 
-	std::cout << "Hi. I know your name is " << name << ". Why don't you give me a new name, as well as your age?\n";
+	std::cout << "Hi. I know your name is " << name << ". Why don't you give me a new name, as well as your age? \n";
 	
 	//assigns string value to the variable name 
 	std::cout << "Enter new name: ";

@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\micro\documents\programming\angel\cpp\3- expressions & interactivity\random\random\main.cpp(16): warning C4244: 'initializing': conversion from 'time_t' to 'unsigned int', possible loss of data
+  random.vcxproj -> C:\Users\micro\Documents\Programming\Angel\cpp\3- Expressions & Interactivity\random\Debug\random.exe
