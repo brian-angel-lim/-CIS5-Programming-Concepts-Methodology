@@ -1,5 +1,5 @@
 # Cpp-OOP
-This repro serves as a general demonstration of basic/intermediate C++ skills
+This repro serves as a general demonstration of basic/intermediate C++ skills, as instructed in CIS5.
 
 The files in this repo go over/will go over the following topics:
 
