@@ -27,7 +27,7 @@ int main()
 	bool boolean2 = 1;
 
 	char character = 'a'; //1 byte
-	std::string stringValue = "crosshare"; //Total size = number of chracters
+	std::string stringValue = "Hello World"; //Total size = number of chracters, "Hello World" is 11 bytes (10 for the letters, 1 for the space)
 
 	std::cout << improperInt << "\n";
 	std::cout << improperFloat << "\n";
