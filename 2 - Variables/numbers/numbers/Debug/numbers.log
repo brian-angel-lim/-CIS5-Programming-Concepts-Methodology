@@ -1,3 +1,0 @@
-﻿  main.cpp
-c:\users\micro\documents\programming\angel\cpp\2 - variables\numbers\numbers\main.cpp(10): warning C4305: 'initializing': truncation from 'double' to 'float'
-  numbers.vcxproj -> C:\Users\micro\Documents\Programming\Angel\cpp\2 - Variables\numbers\Debug\numbers.exe

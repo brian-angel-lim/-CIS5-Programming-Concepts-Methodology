@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\micro\documents\programming\angel\cpp\2 - variables\variables\variables\main.cpp(18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\micro\documents\programming\angel\cpp\2 - variables\variables\variables\main.cpp(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  variables.vcxproj -> C:\Users\micro\Documents\Programming\Angel\cpp\2 - Variables\variables\Debug\variables.exe
