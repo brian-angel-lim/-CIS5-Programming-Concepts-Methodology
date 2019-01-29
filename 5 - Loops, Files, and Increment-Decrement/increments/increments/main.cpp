@@ -17,11 +17,11 @@ int main()
 
 	PostVsPre();
 
-	puzzle1(score);
+	score = puzzle1(score);
 	std::cout << "Score: " << score << "/4\n";
-	puzzle2(score);
+	score = puzzle2(score);
 	std::cout << "Score: " << score << "/4\n";
-	puzzle3(score);
+	score = puzzle3(score);
 	std::cout << "Score: " << score << "/4\n\n";
 
 	return 0;
@@ -40,14 +40,16 @@ void PostVsPre()
 	//reminder: postfix will cause the value to increment AFTER cout displays num. prefix will increment BEFORE. 
 	int num2 = 4;
 
+	std::cout << "Increments:\n";
 	std::cout << num2 << "\n"; //displays 4
 	std::cout << num2++ << "\n"; //displays 4, then adds 1 to value
 	std::cout << num2 << "\n"; //displays 5
-	std::cout << ++num2 << "\n"; //adds 1 to num, then displays 6
+	std::cout << ++num2 << "\n\n"; //adds 1 to num, then displays 6
 
 	//same rules apply for decrements
 	int num3 = 4;
 
+	std::cout << "Decrements:\n";
 	std::cout << num3 << "\n"; //displays 4
 	std::cout << num3-- << "\n"; //displays 4, then subtracts 1 to value
 	std::cout << num3 << "\n"; //displays 3
@@ -97,20 +99,21 @@ int puzzle2(int score)
 	std::cout << "a = 2\n";
 	std::cout << "b = 5\n";
 	std::cout << "c = a * b++\n";
-	std::cout << "What does c display?";
+	std::cout << "What does c display? ";
 	std::cin >> answer2;
 
 	if (answer2 == 10)
 	{
 		++score;
 		std::cout << "Correct!\n";
+		std::cout << "Score: " << score << "/4\n";
 	}
 	else
 	{
 		std::cout << "incorrect.\n";
 	}
 
-	std::cout << "What does b display?\n";
+	std::cout << "\nWhat does b display? ";
 	std::cin >> answer3;
 
 	if (answer3 == 6)
@@ -127,6 +130,89 @@ int puzzle2(int score)
 
 int puzzle3(int score)
 {
+	int x = 0;
+	char answer4;
+
 	std::cout << "\nPuzzle 3:\n";
-	return score;
+
+	std::cout << "int x = 0;\n";
+	std::cout << "if (x++)\n"
+		<< "{\n"
+		<< "\tstd::cout << \"True\"\n"
+		<< "else\n"
+		<< "{\n"
+		<< "\tstd::cout << \"False\"\n"
+		<< "}\n\n";
+	std::cout << "What does this statement display(T or F)? ";
+	std::cin >> answer4;
+
+	if (answer4 == 'T' || answer4 == 't')
+	{
+		std::cout << "Correct!\n";
+		return ++score;
+	}
+	else
+	{
+		std::cout << "incorrect.\n";
+		return score;
+	}
 }
+
+/*
+num1 = 1;
+(num1++): 1
+(num1++):3
+
+Increments:
+4
+4
+5
+6
+
+Decrements:
+4
+4
+3
+2
+
+
+
+Puzzle 1:
+a = 18
+b = a++
+c = --b
+d = c++
+What does d display? 18
+Correct!
+Score: 1/4
+
+Puzzle 2:
+a = 2
+b = 5
+c = a * b++
+What does c display? 10
+Correct!
+Score: 2/4
+
+What does b display? 6
+Correct!
+Score: 3/4
+
+Puzzle 3:
+int x = 0;
+if (x++)
+{
+		std::cout << "True"
+else
+{
+		std::cout << "False"
+}
+
+What does this statement display(T or F)? t
+Correct!
+Score: 4/4
+
+
+C:\Users\micro\Documents\Programming\Angel\cpp\CIS5\5 - Loops, Files, and Increment-Decrement\increments\Debug\increments.exe (process 27128) exited with code 0.
+Press any key to close this window . . .
+*/
