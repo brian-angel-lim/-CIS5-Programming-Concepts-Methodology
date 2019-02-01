@@ -1,7 +1,18 @@
 #include <iostream>
 #include <fstream>
 
+void writeLoop();
+void readLoop();
+
 int main()
+{
+	writeLoop();
+	readLoop();
+
+	return 0;
+}
+
+void writeLoop()
 {
 	std::ofstream outputFile;
 	int numberOfDays = 0;
@@ -22,9 +33,24 @@ int main()
 	}
 
 	outputFile.close();
-	std::cout << "Data written to Sales.txt\n";
+	std::cout << "Data written to Sales.txt\n\n";
+}
 
-	return 0;
+void readLoop()
+{
+	std::ifstream inputFile;
+	int num;
+
+	std::cout << "Here is what Sales.txt reads: \n";
+	inputFile.open("Sales.txt");
+
+	while (inputFile >> num) //while data from the inputFile is being read and assigned to num based on data on file's read position
+	{
+		std::cout << num << "\n";
+	}
+
+	inputFile.close();
+	std::cout << "\n";
 }
 
 /*OUTPUT
@@ -34,8 +60,16 @@ Enter the sales for day 2: 200
 Enter the sales for day 3: 300
 Data written to Sales.txt
 
-C:\Users\micro\Documents\Programming\Angel\cpp\CIS5\5 - Loops, Files, and Increment-Decrement\filesWithLoops\Debug\filesWithLoops.exe (process 21408) exited with code 0.
+Here is what Sales.txt reads:
+100
+200
+300
+
+
+C:\Users\micro\Documents\Programming\Angel\cpp\CIS5\5 - Loops, Files, and Increment-Decrement\filesWithLoops\Debug\filesWithLoops.exe (process 16348) exited with code 0.
 Press any key to close this window . . .
+
+
 */
 
 /*Sales.txt
