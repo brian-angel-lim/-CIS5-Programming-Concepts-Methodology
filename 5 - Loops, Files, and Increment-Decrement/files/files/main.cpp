@@ -18,9 +18,10 @@ int main()
 void inputFile()
 {
 	std::ofstream outputFile; //Step 2 - create input file stream object. Make an ofstream if you want to create a file and write data onto it
-	
+
 	outputFile.open("C:\\data\\inventory.txt"); //Step 3 - Write directory for where you want to create a file
-	//In the above statement, the file inventory.txt is opened and linked with inputFile. 
+	//In the above statement, the file inventory.txt is opened and stored as a value in the variable outputFile
+
 	
 }
 
