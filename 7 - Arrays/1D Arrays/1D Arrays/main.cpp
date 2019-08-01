@@ -21,10 +21,9 @@ int main()
 
 
 	std::cout << "\nHere is array 2: ";
-	for (int i = 0; i < 5; i++)
-	{
-		std::cout << array2[i] << " ";
-	}
+	//Range-based for loop - the value of val is the element size of array2
+	for (int val : array2)
+		std::cout << val << " "; 
 
 	return 0;
 }
